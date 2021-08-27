@@ -1,0 +1,25 @@
+#member
+  #jb
+    background-image url('../assets/hii.png')
+    background-repeat no-repeat
+    background-size cover
+    margin 0
+    height 300px
+#register
+  #rejb
+    background-image url('../assets/create.png')
+    background-repeat no-repeat
+    background-size cover
+    margin 0
+#home
+  #footer
+    background-color #F8F9FA
+    color #808080
+.product-card
+  height 28rem
+  font-size 1.5rem
+  color black
+.shop-card
+  height 23rem
+  font-size 1.5rem
+  color black
