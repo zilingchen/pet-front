@@ -12,7 +12,7 @@
       | {{ data.item.sell ? 'v' : 'X' }}
     template(#cell(action)="data")
       b-btn(variant="outline-success" @click="editProduct(data.index)") 編輯
-      b-btn(variant="outline-danger" @click="$bvModal.del('modal-product')") 刪除
+      b-btn(variant="outline-danger" @click="delProduct(data.index)") 刪除
   b-modal#modal-product(
     :title="form._id.length > 0 ? '編輯商品' : '新增商品'"
     ok-variant="success"
