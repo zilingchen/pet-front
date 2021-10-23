@@ -20,16 +20,16 @@ b-container#home
       br.m-2
       br.m-2
       h3.mb-4.text-center  - 寵物用品店 -
-    b-col(cols="12" md="6" lg="3" v-for="product in products" :key="product._id")
-      router-link(:to="'/product/'+product._id")
-        ProductCard(:product="product")
-    //- b-col(cols="12" md="6" lg="3" v-for="shop in shops" :key="shop._id")
-    //-   router-link(:to="'/shop/'+shop._id")
-    //-     ShopCard(:shop="shop")
-    //-     br.m-6
-    //-     br.m-6
-    //-     br.m-6
-    //-     br.m-6
+    //- b-col(cols="12" md="6" lg="3" v-for="product in products" :key="product._id")
+    //-   router-link(:to="'/product/'+product._id")
+    //-     ProductCard(:product="product")
+    b-col(cols="12" md="6" lg="3" v-for="shop in shops" :key="shop._id")
+      router-link(:to="'/shop/'+shop._id")
+        ShopCard(:shop="shop")
+        br.m-6
+        br.m-6
+        br.m-6
+        br.m-6
     b-col.mt-6.text-center#footer(cols="12")
       p
       p Copyright &copy; 2021 Ziling Chen
